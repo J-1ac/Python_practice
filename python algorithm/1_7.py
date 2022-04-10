@@ -13,4 +13,4 @@ while i <= n:
     sum += i
     i += 1
 
-print(f"1부터 {n}까지 정수의 합은 {sum}입니다.")
+print(f"1부터 {n}까지 정수의 합은 {sum}입니다")
