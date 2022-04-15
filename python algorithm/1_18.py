@@ -8,7 +8,7 @@ for _ in range(n):
     r = random.randint(10, 99)
     print(r, end=" ")
     if r == 13:
-        print("\n프로그램을 종료합니다.")
+        print("\n프로그램을 종료합니다.")               # else문 실행되지 않고 종료됨.
         break
 else:
     print("\n난수 생성을 종료합니다.")
