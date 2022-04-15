@@ -3,6 +3,6 @@
 area = int(input("직사각형의 넓이를 입력하세요.: "))
 
 for i in range(1, area + 1):                            # 1부터 사각형의 넓이 계산
-    if i*i > area: break
-    if area % i: continue
-    print(f"{i} x {area // i}")
+    if i*i > area: break                                # i가 가장 긴 변의 길이가 됨
+    if area % i: continue                               # area가 i로 나누어 떨어지지 않으면 for문의 다음 반복 
+    print(f"{i} x {area // i}")                         # 나누어 떨어진다면 i값 출력
