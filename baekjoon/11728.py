@@ -1,5 +1,3 @@
-
-
 lenA, lenB = map(int, input().split())
 
 A = []*lenA
