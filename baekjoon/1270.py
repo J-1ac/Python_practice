@@ -1,13 +1,16 @@
-def consider_occupy(list_land):
-    population = list_land[0]
-    land = list_land[0:]
-    for i in range(population):
-        count = land.count(land[i])
-        if count > int(population/2):
+import sys
+from collections import Counter
+
+def consider_occupy(list_info):
+    population = list_info[0]
+    land = list_info[0:]
+    count = Counter(land)
+    for i in range(population):    
+        if count[land[i]] > population/2:
             return print(land[i])
     return print("SYJKGW")
 
 T = int(input())
 for _ in range(T):
-    land = list(map(int, input().split(" ")))
-    consider_occupy(land)
+    infomation = list(map(int, sys.stdin.readline().split()))
+    consider_occupy(infomation)
