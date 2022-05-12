@@ -1,11 +1,3 @@
-def josephus(peoplelist, k, initial):
-    popindex = k-1+initial
-    if popindex > len(peoplelist):
-        popindex -= len(peoplelist)
-    poped = peoplelist[popindex]
-    peoplelist.pop[popindex]
-
-
 N, K = map(int, input().split())
 plist=[]
 popedlist=[]
