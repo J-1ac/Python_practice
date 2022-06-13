@@ -14,6 +14,9 @@ def mostcount(s):
             return("?")
     return(s[max_count])
     
+
 s1 = input()
 s2 = s1.lower()
 print(mostcount(s2).upper())
+
+#반례 zzaaccc
