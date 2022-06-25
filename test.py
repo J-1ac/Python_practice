@@ -1,2 +1,1 @@
-a=str(1234)
-print(a,a+1)
+print(201//2)
