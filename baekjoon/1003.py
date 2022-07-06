@@ -1,14 +1,19 @@
+import sys
+c0=[1,0]
+c1=[0,1]
 def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n-2) + fibonacci(n-1)
+    length=len(c0)
+    for i in range(length,n+1):
+        c0.append(c0[i-2]+c0[i-1])
+        c1.append(c1[i-2]+c1[i-1])
+    print(c0[n], c1[n])
 
-T = int(input())
-result = []
-c0, c1 = 0, 0
+T = int(sys.stdin.readline())
 for _ in range(T):
-    
-    print(c0, c1)
+    n=int(sys.stdin.readline())
+    if n==0:
+        print("1 0")
+    elif n==1:
+        print("0 1")
+    else:
+        fibonacci(n)
